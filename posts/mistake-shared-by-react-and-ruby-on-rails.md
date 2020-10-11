@@ -1,4 +1,5 @@
 ---
+title: Mistake shared by React and Ruby On Rails.
 ---
 
 # Mistake shared by React and Ruby On Rails.
