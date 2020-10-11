@@ -1,0 +1,5 @@
+User-agent: deepcrawl 
+Disallow:
+
+User-agent: *
+Disallow: /
