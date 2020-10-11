@@ -1,8 +1,9 @@
 ---
-title: Mistake shared by React and Ruby On Rails.
+title: Preserved software over rotting software.
+lastModified: 11 Oct 2020 18:35 GMT+1
 ---
 
-# Mistake shared by React and Ruby On Rails.
+# Preserved software over rotting software.
 
 Their cores are bound to specific language.
 

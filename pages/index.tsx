@@ -4,30 +4,23 @@ import { join } from "path";
 import remark from "remark";
 import html from "remark-html";
 import Link from "next/link";
+import Header from "../components/Header";
 
 export default function Home(props) {
   return (
     <>
-      <div className="container py-4 flex items-center">
-        <img
-          className="h-12 w-12 rounded-full"
-          src="https://pbs.twimg.com/profile_images/1245998426396831744/fcQ36KJ9_400x400.jpg"
-        />
-        <span className="pl-4 text-3xl font-medium">Michał Pietraszko</span>
-        <div className="flex-auto"></div>
-        <span className="pr-4">
-          <Link href="/">Home</Link>
-        </span>
-        <span className="pr-4">
-          <Link href="/about">About</Link>
-        </span>
-      </div>
+      <Header />
       <div className="container">
         <ul>
           {props.posts.map((post, index) => {
             return (
-              <li key={index}>
-                <Link href={post.href}>{post.data.title}</Link>
+              <li key={index} className="my-4">
+                <span className="text-4xl font-bold block hover:underline">
+                  <Link href={post.href}>{post.data.title}</Link>
+                </span>  
+                <span className="font-light text-sm">
+                  Last modified: {new Date(post.data.lastModified).toUTCString()}
+                </span>
               </li>
             );
           })}

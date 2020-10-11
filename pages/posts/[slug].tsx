@@ -4,9 +4,15 @@ import { GetStaticPathsResult } from "next";
 import { join } from "path";
 import remark from "remark";
 import html from "remark-html";
+import Header from "../../components/Header";
 
 export default function Post(props) {
-  return <div dangerouslySetInnerHTML={{ __html: props.content }}></div>;
+  return (
+    <>
+      <Header />
+      <div className="container" dangerouslySetInnerHTML={{ __html: props.content }}></div>
+    </>
+  );
 }
 
 export async function getStaticProps(props) {
@@ -27,7 +33,6 @@ export async function getStaticProps(props) {
 }
 
 export function getStaticPaths(): GetStaticPathsResult {
-  // load all files and their data
   const pathToPosts = join(process.cwd(), "posts");
   const paths = readdirSync(pathToPosts)
     .map((file) => file.replace(".md", ""))
