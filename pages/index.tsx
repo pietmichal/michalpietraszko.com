@@ -14,7 +14,7 @@ export default function Home(props) {
         <ul>
           {props.posts.map((post, index) => {
             return (
-              <li key={index} className="my-4 p-4 border rounded-md shadow-sm">
+              <li key={index} className="my-4 p-4 rounded-md shadow-md">
                 <span className="text-xl md:text-3xl font-bold block hover:underline leading-none">
                   <Link href={post.href}>{post.data.title}</Link>
                 </span>  
