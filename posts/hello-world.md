@@ -1,6 +1,6 @@
 ---
 title: Hello, World!
-lastModified: 11 Oct 2020 18:35 GMT+1
+description: This is a hello world!
 ---
 
 # Hello, World!

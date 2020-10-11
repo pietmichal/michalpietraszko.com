@@ -10,16 +10,16 @@ export default function Home(props) {
   return (
     <>
       <Header />
-      <div className="container">
+      <div className="container px-2">
         <ul>
           {props.posts.map((post, index) => {
             return (
-              <li key={index} className="my-4">
-                <span className="text-4xl font-bold block hover:underline">
+              <li key={index} className="my-4 p-4 border rounded-md shadow-sm">
+                <span className="text-xl md:text-3xl font-bold block hover:underline leading-none">
                   <Link href={post.href}>{post.data.title}</Link>
                 </span>  
-                <span className="font-light text-sm">
-                  Last modified: {new Date(post.data.lastModified).toUTCString()}
+                <span className="font-light pt-1 md:pt-2 text-sm md:text-lg block leading-1">
+                  {post.data.description} 
                 </span>
               </li>
             );

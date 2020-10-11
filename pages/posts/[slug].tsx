@@ -10,7 +10,7 @@ export default function Post(props) {
   return (
     <>
       <Header />
-      <div className="container markdown" dangerouslySetInnerHTML={{ __html: props.content }}></div>
+      <div className="container markdown px-2" dangerouslySetInnerHTML={{ __html: props.content }}></div>
     </>
   );
 }

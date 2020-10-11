@@ -1,6 +1,6 @@
 ---
 title: Preserved software over rotting software.
-lastModified: 11 Oct 2020 18:35 GMT+1
+description: Web Assembly opened a door to new possibilities that can be now seriously considered.
 ---
 
 # Preserved software over rotting software.
