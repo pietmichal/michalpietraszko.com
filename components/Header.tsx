@@ -9,7 +9,7 @@ export default function Header() {
     <div className="bg-white shadow-sm">
       <div className="container py-4 px-2 flex items-center">
         <img
-          className="h-8 w-8 md:h-12 md:w-12 rounded-full"
+          className="h-8 w-8 md:h-12 md:w-12 rounded-full ml-2"
           src="https://pbs.twimg.com/profile_images/1245998426396831744/fcQ36KJ9_400x400.jpg"
         />
         <span className="pl-2 text-2xl md:text-3xl font-medium"> 

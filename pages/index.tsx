@@ -12,7 +12,7 @@ export default function Home(props) {
       <Header />
       <div className="container px-6 md:px-8 my-6">
       <h1 className="container font-extrabold text-4xl my-6">Recent posts</h1>
-        <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-3">
           {props.posts.map((post, index) => {
             return (
               <li key={index} className="p-4 rounded-md shadow-md bg-white">
