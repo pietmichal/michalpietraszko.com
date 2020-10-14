@@ -1,12 +1,12 @@
 /* purgecss start ignore */
 
 .markdown {
-  @apply text-base;
+  @apply text-base text-justify;
 }
 
 /* Headers */
 .markdown h1 {
-  @apply text-4xl my-6 font-bold;
+  @apply text-4xl mb-6 mt-4 font-bold;
 }
 
 .markdown h2 {

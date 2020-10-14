@@ -10,7 +10,14 @@ export default function Post(props) {
   return (
     <>
       <Header />
-      <div className="container markdown px-2" dangerouslySetInnerHTML={{ __html: props.content }}></div>
+      <div className="container">
+        <div className="bg-white rounded-md overflow-auto mt-6 px-6 mx-6 md:mx-8 mb-6">
+          <div
+            className="markdown"
+            dangerouslySetInnerHTML={{ __html: props.content }}
+          ></div>
+        </div>
+      </div>
     </>
   );
 }

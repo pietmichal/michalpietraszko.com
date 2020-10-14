@@ -1,17 +1,21 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useState } from "react";
 
 export default function Header() {
   const [burgerOpen, setBurgerOpen] = useState(false);
+  const router = useRouter();
   return (
-    <>
-      <div className="container py-2 px-2 flex items-center bg-white">
+    <div className="bg-white">
+      <div className="container py-4 px-2 flex items-center">
         <img
           className="h-8 w-8 md:h-12 md:w-12 rounded-full"
           src="https://pbs.twimg.com/profile_images/1245998426396831744/fcQ36KJ9_400x400.jpg"
         />
-        <span className="pl-2 text-lg md:text-3xl font-medium">Michał Pietraszko</span>
-        <div className="w-6 h-6 ml-auto">
+        <span className="pl-2 text-lg md:text-3xl font-medium">
+          Michał Pietraszko
+        </span>
+        <div className="w-6 h-6 md:w-8 md:h-8 ml-auto lg:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
@@ -25,9 +29,29 @@ export default function Header() {
             />
           </svg>
         </div>
+        <div className="hidden lg:block ml-auto">
+          <Link href="/">
+            <span
+              className={`hover:bg-gray-400 cursor-pointer t p-2 mr-4 rounded-sm ${
+                router.pathname === "/" && "bg-gray-200"
+              }`}
+            >
+              Home
+            </span>
+          </Link>
+          <Link href="/about">
+            <span
+              className={`hover:bg-gray-400 cursor-pointer t p-2 mr-4 rounded-sm ${
+                router.pathname === "/about" && "bg-gray-200"
+              }`}
+            >
+              About
+            </span>
+          </Link>
+        </div>
       </div>
       {burgerOpen && (
-        <div className="container px-2 flex flex-col divide-y divide-gray-500 bg-gray-300">
+        <div className="container px-2 flex flex-col divide-y divide-gray-500 bg-gray-300 lg:hidden">
           <Link href="/">
             <span className="py-1 hover:underline cursor-pointer">Home</span>
           </Link>
@@ -36,6 +60,6 @@ export default function Header() {
           </Link>
         </div>
       )}
-    </>
+    </div>
   );
 }

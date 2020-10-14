@@ -10,11 +10,11 @@ export default function Home(props) {
   return (
     <>
       <Header />
-      <div className="container px-2">
+      <div className="container px-6 md:px-8">
         <ul>
           {props.posts.map((post, index) => {
             return (
-              <li key={index} className="my-4 p-4 rounded-md shadow-md">
+              <li key={index} className="my-4 p-4 rounded-md shadow-md bg-white">
                 <span className="text-xl md:text-3xl font-bold block hover:underline leading-none">
                   <Link href={post.href}>{post.data.title}</Link>
                 </span>  
