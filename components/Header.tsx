@@ -15,7 +15,7 @@ export default function Header() {
         <span className="pl-2 text-2xl md:text-3xl font-medium"> 
           Michał Pietraszko
         </span>
-        <div className="w-6 h-6 md:w-8 md:h-8 ml-auto lg:hidden">
+        <div className="w-6 h-6 md:w-8 md:h-8 mr-2 ml-auto lg:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
