@@ -15,7 +15,7 @@ export default function Home(props) {
         <ul className="grid grid-cols-1 lg:grid-cols-2 gap-3">
           {props.posts.map((post, index) => {
             return (
-              <li key={index} className="p-4 rounded-md shadow-md bg-white">
+              <li key={index} className="p-4 rounded-md shadow-md bg-white md:h-48 h-24">
                 <span className="text-xl md:text-3xl font-bold block hover:underline leading-none">
                   <Link href={post.href}>{post.data.title}</Link>
                 </span>  
