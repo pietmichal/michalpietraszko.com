@@ -11,7 +11,7 @@ export default function Post(props) {
     <>
       <Header />
       <div className="container">
-        <div className="bg-white rounded-md overflow-auto mt-6 px-6 mx-6 md:mx-8 mb-6">
+        <div className="bg-white rounded-md mt-6 px-6 mx-6 md:mx-8 mb-6 py-4">
           <div
             className="markdown"
             dangerouslySetInnerHTML={{ __html: props.content }}

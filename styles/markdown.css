@@ -1,12 +1,12 @@
 /* purgecss start ignore */
 
 .markdown {
-  @apply text-base text-justify;
+  @apply text-base;
 }
 
 /* Headers */
 .markdown h1 {
-  @apply text-4xl mb-6 mt-4 font-bold;
+  @apply text-4xl mb-6 font-bold;
 }
 
 .markdown h2 {
@@ -83,6 +83,11 @@
  */
 .markdown :not(pre) > code.language-text {
   white-space: pre-line;
+}
+
+.markdown code {
+  display: block;
+  overflow-y: scroll;
 }
 
 /* purgecss end ignore */
