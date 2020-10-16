@@ -3,8 +3,6 @@ title: Preserved software over rotting software.
 description: Web Assembly opened a door to new possibilities that can be now seriously considered.
 ---
 
-# Preserved software over rotting software.
-
 Their cores are bound to specific language.
 
 If they used lingua franca of programming languages such as C.

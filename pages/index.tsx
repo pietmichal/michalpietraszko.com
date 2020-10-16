@@ -8,26 +8,46 @@ import Header from "../components/Header";
 
 export default function Home(props) {
   return (
-    <>
+    <div className="flex flex-col h-screen justify-between">
       <Header />
-      <div className="container px-6 md:px-8 my-6">
-      <h1 className="container font-extrabold text-4xl my-6">Recent posts</h1>
-        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-3">
+      <div className="bg-gray-700 pb-16 test">
+        <h1
+          className="font-semibold text-4xl container px-8 py-24"
+          style={{ color: "#ecf0f1" }}
+        >
+          Recent posts
+        </h1>
+      </div>
+      <div
+        className="container rounded-md p-4 mb-auto bg-white shadow-xl"
+        style={{ marginTop: "-130px" }}
+      >
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {props.posts.map((post, index) => {
             return (
-              <li key={index} className="p-4 rounded-md shadow-md bg-white md:h-48 h-24">
-                <span className="text-xl md:text-3xl font-bold block hover:underline leading-none">
-                  <Link href={post.href}>{post.data.title}</Link>
-                </span>  
-                <span className="font-light pt-1 md:pt-2 text-sm md:text-lg block leading-1">
-                  {post.data.description} 
-                </span>
-              </li>
+              <Link href={post.href}>
+                <li key={index} className="rounded-md shadow-md bg-white group cursor-pointer">
+                  <div className="relative pb-64 md:pb-48">
+                    <img
+                      className="rounded-t-md w-full h-full absolute object-cover"
+                      src={`/test${index+1}.jpg`}
+                    />
+                  </div>
+                  <div className="p-4">
+                    <span className="text-xl pb-1 font-bold block grouphover:underline leading-none">
+                      {post.data.title}
+                    </span>
+                    <span className="font-light text-md block text-gray-700">
+                      {post.data.description}
+                    </span>
+                  </div>
+                </li>
+              </Link>
             );
           })}
         </ul>
       </div>
-    </>
+    </div>
   );
 }
 
