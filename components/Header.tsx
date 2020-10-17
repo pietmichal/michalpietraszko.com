@@ -6,7 +6,7 @@ export default function Header() {
   const [burgerOpen, setBurgerOpen] = useState(false);
   const router = useRouter();
   return (
-    <div className="bg-gray-200 shadow-sm">
+    <div className="bg-white">
       <div className="container py-4 px-2 flex items-center">
         <img
           className="h-8 w-8 md:h-12 md:w-12 rounded-full ml-2"
@@ -34,7 +34,7 @@ export default function Header() {
                 router.pathname === "/"
                   ? "border-gray-400"
                   : "border-transparent"
-              } cursor-pointer box-border border-2 p-2 mr-4 rounded-sm hover:border-gray-800`}
+              } cursor-pointer box-border border-2 p-2 mr-4 rounded-md hover:border-gray-800`}
             >
               Home
             </span>
@@ -45,7 +45,7 @@ export default function Header() {
                 router.pathname === "/about"
                   ? "border-gray-400"
                   : "border-transparent"
-              } cursor-pointer box-border border-2 p-2 mr-4 rounded-sm hover:border-gray-800`}
+              } cursor-pointer box-border border-2 p-2 mr-4 rounded-md hover:border-gray-800`}
             >
               About
             </span>

@@ -10,6 +10,8 @@ module.exports = {
     },
     extend: {},
   },
-  variants: {},
+  variants: {
+    textDecoration: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
+  },
   plugins: [],
 };

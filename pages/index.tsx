@@ -10,7 +10,7 @@ export default function Home(props) {
   return (
     <div className="flex flex-col h-screen justify-between">
       <Header />
-      <div className="bg-gray-700 pb-16 test">
+      <div className="bg-gray-700 pb-16 test shadow-inner">
         <h1
           className="font-semibold text-4xl container px-8 py-24"
           style={{ color: "#ecf0f1" }}
@@ -19,10 +19,10 @@ export default function Home(props) {
         </h1>
       </div>
       <div
-        className="container rounded-md p-4 mb-auto bg-white shadow-xl"
+        className="container p-4 mb-auto"
         style={{ marginTop: "-130px" }}
       >
-        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 px-4">
           {props.posts.map((post, index) => {
             return (
               <Link href={post.href}>
@@ -34,11 +34,14 @@ export default function Home(props) {
                     />
                   </div>
                   <div className="p-4">
-                    <span className="text-xl pb-1 font-bold block grouphover:underline leading-none">
+                    <span className="text-xl pb-1 font-bold block group-hover:underline leading-none">
                       {post.data.title}
                     </span>
                     <span className="font-light text-md block text-gray-700">
                       {post.data.description}
+                    </span>
+                    <span>
+                      Read more &#8594;
                     </span>
                   </div>
                 </li>

@@ -10,23 +10,23 @@ export default function Post(props) {
   return (
     <div className="flex flex-col h-screen justify-between">
       <Header />
-      <div className="bg-gray-700 pb-16 test">
+      <div className="bg-gray-700  test">
         <h1
-          className="font-semibold text-4xl container px-8 py-24"
+          className="font-semibold text-4xl container px-8 py-12  leading-none max-w-screen-lg"
           style={{ color: "#ecf0f1" }}
         >
           {props.data.title}
         </h1>
       </div>
-      <div
-        className="container rounded-md px-8 mb-auto bg-white shadow-xl"
-        style={{ marginTop: "-130px" }}
-      >
-          <div
-            className="markdown"
-            dangerouslySetInnerHTML={{ __html: props.content }}
-          ></div>
+      <div className="container rounded-md px-8 pt-8 mb-auto max-w-screen-lg">
+        <div className="relative" style={{paddingBottom: "50%"}}>
+          <img src="/test1.jpg" className="object-cover absolute w-full h-full rounded-md shadow-lg" />
         </div>
+        <div
+          className="markdown pt-8"
+          dangerouslySetInnerHTML={{ __html: props.content }}
+        ></div>
+      </div>
     </div>
   );
 }

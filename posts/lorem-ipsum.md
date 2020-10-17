@@ -3,8 +3,6 @@ title: Est celer fovit procul apta artes
 description: Lorem markdownum festinant hunc dis si turba Ulixes et multis, in ne omina.
 ---
 
-## Lactis tamen dixit mixta pectus exsternata Cymeli
-
 Lorem markdownum festinant hunc: dis si turba Ulixes et multis, in ne omina.
 Artes Phoebus, indigenis [vulnera circum ex](http://ait-in.net/dignus) mihi
 magnum vellem? Tota et quae nempe, bimatrem negari non. Est deum hoc refugit
