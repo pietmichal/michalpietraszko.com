@@ -30,7 +30,7 @@ export default function Home(props) {
                   <div className="relative pb-64 md:pb-48">
                     <img
                       className="rounded-t-md w-full h-full absolute object-cover"
-                      src={`/test${index+1}.jpg`}
+                      src={`/${post.slug}.jpg`}
                     />
                   </div>
                   <div className="p-4">
@@ -65,6 +65,7 @@ export async function getStaticProps({ params }) {
       return {
         href: "/posts/" + slug,
         data,
+        slug,
         content: result.toString(),
       };
     })

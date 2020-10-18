@@ -19,13 +19,27 @@ export default function Post(props) {
         </h1>
       </div>
       <div className="container rounded-md px-8 pt-8 mb-auto max-w-screen-lg">
-        <div className="relative" style={{paddingBottom: "50%"}}>
-          <img src="/test1.jpg" className="object-cover absolute w-full h-full rounded-md shadow-lg" />
+        <div className="relative" style={{ paddingBottom: "50%" }}>
+          <img
+            src={`/${props.slug}.jpg`}
+            className="object-cover absolute w-full h-full rounded-md shadow-lg"
+          />
         </div>
         <div
           className="markdown pt-8"
           dangerouslySetInnerHTML={{ __html: props.content }}
         ></div>
+        <div className="bg-gray-700 rounded-md shadow-lg mb-6 test text-white">
+          <div className="grid grid-cols-2 gap-0">
+            <div className="py-16 px-4">
+              <div className="font-bold text-xl text-center">Are you interested in more content like this?</div>
+              <div className="text-center">Get it delivered to your mailbox!</div>
+            </div>
+            <div className="bg-white">
+              <input type="text" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -43,6 +57,7 @@ export async function getStaticProps(props) {
   return {
     props: {
       data: data,
+      slug: props.params.slug,
       content: result.toString(),
     },
   };
