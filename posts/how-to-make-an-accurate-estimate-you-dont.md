@@ -1,66 +1,56 @@
 ---
-title: How to make an accurate estimate? You don't.
-description: Recent tweets about estimates made me worry about how average developer or team member preceives estimation.
+title: How to make an accurate time estimate? You don't.
+description: Recent tweets and general notion about estimates made me worry about how an average software developer preceives estimation.
 ---
 
-Recent popular tweet made me worry because people might agree with it for a wrong reason.
+A recent popular tweet made me worry because people might agree with it for the wrong reason.
 
-Without calling out people - all of it boils down to this quote:
+Without calling out people, all of it boils down to this quote:
 
 > Don't trust developer estimates.
 
-Having to say it is already a sign of a problem. This implies that a developer is a person that you cannot trust.
+People saying it and agreeing with it is a sign of the problem. It paints a picture of a developer being a person you cannot trust and makes less experienced folks feel bad.
 
-This sentiment makes people completely miss the point, atagonizes product teams against software engineers and make less experienced folks feel bad.
+The issue spans beyond twitter. Many books and engineers talk about it a lot. I bet you somebody gave you the advice to double or triple your estimates as a rule of thumb.
 
-The issue even beyond twitter. Many great books and engineers talk abot out. I bet you have been given an advice to double or triple your estimates.
-
-Let us see what Wikipedia has to say:
-
-> Estimation (or estimating) is the process of finding an estimate, 
-> or approximation, which is a value that is usable for some purpose even if input data 
-> may be incomplete, uncertain, or unstable. 
-
-Please make a mental note of it - **the word estimate implies uncertainty**.
+The truth is that **estimate implies uncertainty**.
 
 ## Dealing with uncertainty.
 
-Reality changes every day and new variables come into play. What worked a month ago is very likely not to work this month.
+Reality changes every day. What worked a month ago is not guaranteed to bring the same results this month - especially in the modern world.
 
-Especially when it comes to such a fast paced environment that is software.
+What we do carries a risk. We should embrace the fact that we cannot eradicate it and focus on reducing it instead.
 
-What we do carries a risk. We should focus more on reducing the risk. We cannot completely remove it.
+If the estimation is uncertain, then it does not reflect reality - be it story points or actual hours. Why would you want to bet on it then?
 
-Focus on the objective itself and give yourself a timeframe to achieve it. 
+Focus on the objective. I don't mean finishing user story A, B, and C. **Don't confuse it with a task.**  Think of it more like **the outcome** you want to reach. You might want to improve conversion in a specific channel, help customers do X, or assess the viability of a technology.
 
-Be it a two-week sprint goal, a quarterly objective measured by key results or something that you check results every month.
+If your measurements had proven that something you do is not working as expected, then it is time to take learnings, apply them, and continue what you are doing or pivot.
 
-If an idea proves to be insufficient, react and adjust immediatelly.
+Rinse and repeat until you achieve your desired outcome.
 
-And by an "objective", I don't mean "finish user story A, B and C". I mean the outcome you are contributing towards.
+## Dealing with time.
 
-What do we call this? **Being agile.**
+Time exists, we can't deny that, but estimate still means nothing when it comes to delivering actual value.
 
-## But everyone wants estimates. They need to know when job will be done. What do I do then?
+I am not saying that you should always take your sweet time. You still have to impose limits on yourself.
 
-This is problem is contextual. There is no one-size fits all solution for you as an individual.
+Give yourself a time frame for contribution. Be it a two-week sprint goal or a quarterly objective measured by key results.
 
-If your team is given a list of things to be done without questions asked then give them what they want and play by their rules.
+You still have to take your organization's and team's values into consideration. Some might find unpolished look acceptable. Others might not.
 
-If you agree with organisation's reasoning, go for it.
+Combining the limits with clear objectives and values can yield results faster. They might not be what you have expected, but it is better to learn about it sooner than later.
 
-If you are not, you can try influencing people around you (which is a great skill to obtain) or consider different options in your career.
+Some might say that they need a time estimate so they can put pressure on themselves or their team. More sensible people consider the unpredictable nature of estimation and double, or triple, them just in case.
 
-I am not a big fan of estimates in software projects. Be it story points or actual man-hours. 
+There is a problem with this mindset. It switches the focus from delivering value to getting specific things done on time. Time spent is not directly proportional to the value.
 
-Estimates mean nothing when it comes to delivering actual value. I can understand using story points as a third wheel for development teams that are inexperienced with agile way of thinking.
+You don't reduce risk by increasing the estimated time. You are reducing risk by validating your assumptions often instead.
 
-The truth is, if you need to achieve something, you just do anything necessary to make it happen.
+If you are worried about how much time work will take, focus on reducing the friction in your team instead.
 
-Some people might say that you want to take the quickest thing to do. This is wrong on so many levels.  
+## What if they still expect you to give a time estimate.
 
-You don't reduce risk by taking the lowest estimated ticket. You reduce risk by constant validation of your actions.
+If you agree with the organization's reasoning or are willing to accept it, then go for it.
 
-Do you need to increase conversion in certain channels? Do anything to improve it, then measure it, and continue doing it or take learnings and pivot. 
-
-Rinse and repeat until you achieve your objective.
+If you are not, then you can try influencing people around you  - which is a great skill to obtain - and be good friends with them or consider looking for new opportunities.

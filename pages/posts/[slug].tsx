@@ -26,7 +26,7 @@ export default function Post(props) {
           />
         </div>
         <div
-          className="markdown pt-8"
+          className="prose prose-2xl pt-8"
           dangerouslySetInnerHTML={{ __html: props.content }}
         ></div>
         <div className="bg-gray-700 rounded-md shadow-lg mb-6 test text-white">
