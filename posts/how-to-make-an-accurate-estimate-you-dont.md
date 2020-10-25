@@ -1,6 +1,10 @@
 ---
-title: How to make an accurate time estimate? You don't.
+title: How to make an accurate estimate? You don't.
 description: Recent tweets and general notion about estimates made me worry about how an average software developer preceives estimation.
+publishedDate: 25 Oct 2020
+modifiedDate: 25 Oct 2020
+mediumUrl: xyz
+devtoUrl: xyz
 ---
 
 A recent popular tweet made me worry because people might agree with it for the wrong reason.
@@ -11,9 +15,9 @@ Without calling out people, all of it boils down to this quote:
 
 People saying it and agreeing with it is a sign of the problem. It paints a picture of a developer being a person you cannot trust and makes less experienced folks feel bad.
 
-The issue spans beyond twitter. Many books and engineers talk about it a lot. I bet you somebody gave you the advice to double or triple your estimates as a rule of thumb.
+The issue spans beyond twitter. Many books and engineers talk about it a lot. I bet somebody gave you the advice to double or triple your estimates as a rule of thumb.
 
-The truth is that **estimate implies uncertainty**.
+Everyone involved in software projects have to stop ignoring the fact that **estimate implies uncertainty**.
 
 ## Dealing with uncertainty.
 
@@ -49,8 +53,8 @@ You don't reduce risk by increasing the estimated time. You are reducing risk by
 
 If you are worried about how much time work will take, focus on reducing the friction in your team instead.
 
-## What if they still expect you to give a time estimate.
+## What if they still expect you to give an estimate.
 
 If you agree with the organization's reasoning or are willing to accept it, then go for it.
 
-If you are not, then you can try influencing people around you  - which is a great skill to obtain - and be good friends with them or consider looking for new opportunities.
+If you are not, then you can try influencing people around you - which is a great skill to learn - and be good friends with them or consider looking for new opportunities.
